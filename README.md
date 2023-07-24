@@ -6,6 +6,5 @@ also cacheable, such as online video transmission. We thus assume that the NO al
 <img width="611" alt="edge node" src="https://github.com/marcodiprima/DeepCacheAllocation_rl/assets/92303616/1ba5797d-9a97-46e1-a8ae-fece2e6cf4bb">
 
 
-
 My goal is to have NO decide, optimally how many cache slots should be assigned to each ISP, in order to minimize upstream traffic, i.e., traffic from the Internet to the edge node, without knowing the nature of the traffic. Because of the traffic encryption, the NO can only base its allocation decision on data-driven strategies consisting of trial and error: the NO continuously perturbs the cache allocation and observes the variation on the traffic.
 This problem can be simulated with Reinforcement Learning (RL). Just as the NO learns to optimize the allocation by continually perturbing it, so too must I keep the cost of such perturbations reasonable.
